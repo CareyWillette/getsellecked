@@ -1,0 +1,54 @@
+<md-toolbar class="md-hue-2">
+  <div class="md-toolbar-tools">
+    <md-button ng-click="vm.toggleSelleeSideNav('left')" class="md-icon-button" aria-label="Settings">
+      <md-icon><i class="material-icons"></i>menu</md-icon>
+    </md-button>
+
+    <h2 flex md-truncate>{{vm.toolbarHeader}}</h2>
+
+    <md-button class="md-icon-button md-accent" aria-label="Favorite">
+      <md-icon><i class="material-icons">favorites</i></md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button" aria-label="More">
+      <md-icon><i class="material-icons">more_vert</i></md-icon>
+    </md-button>
+  </div>
+
+
+  <md-sidenav class="md-sidenav-left" md-component-id="left">
+
+   <md-toolbar class="md-warn">
+     <h1 class="md-toolbar-tools">Fuck you! Take a drink</h1>
+   </md-toolbar>
+
+ </md-sidenav>
+
+</md-toolbar>
+
+<md-content flex layout="column" layout-align="center center">
+
+  <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch class="selleck-card">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline md-accent">It's Fuckin' Selleee</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout="row" layout-align="space-between">
+          <div id="selleckPic" class="md-media-xl card-media">
+            <img ng-src="{{vm.itSellee}}">
+          </div>
+
+        </md-card-content>
+      </md-card>
+
+
+       <div>
+         <md-button ng-click="vm.getSellecked()" class="md-accent">hold onto your dick and get the next pic
+           <md-icon><i class="material-icons">arrow_forward</i></md-icon>
+         </md-button>
+       </div>
+
+     <div flex></div>
+
+   </md-content>

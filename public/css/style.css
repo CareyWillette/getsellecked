@@ -1,0 +1,10 @@
+md-card.md-default-theme.selleck-card {
+  box-shadow: none;
+  background: transparent;
+}
+
+#selleckPic.md-media-xl.card-media {
+  background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
